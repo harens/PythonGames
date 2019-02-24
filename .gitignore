@@ -230,3 +230,10 @@ dmypy.json
 .venv/
 
 # End of https://www.gitignore.io/api/macos,python,pycharm
+\.idea/
+.idea/PythonGames.iml
+.idea/encodings.xml
+.idea/markdown-navigator.xml
+.idea/markdown-navigator/
+.idea/misc.xml
+.idea/modules.xml

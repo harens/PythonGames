@@ -1,6 +1,9 @@
 from turtle import Screen, Turtle
 from random import randint
-from tkinter import messagebox
+from tkinter import messagebox, Tk
+
+window = Tk()
+window.withdraw()
 
 
 def chase_move(x_cor, y_cor):  # _cor is where the mouse wants to go
@@ -19,6 +22,7 @@ def chase_move(x_cor, y_cor):  # _cor is where the mouse wants to go
     if turtle.distance(user_arrow) <= 65:  # This checks if the arrow hits the turtle
         user_arrow.color("red")
         turtle.color("red")
+        global tk
         messagebox.showinfo(
             "Turtle Tag!", "You caught the Turtle!\nYou Win!"
         )  # \n adds a new line
@@ -48,4 +52,6 @@ turtle.forward(100)
 turtle.pd()
 
 screen.onclick(chase_move)  # Runs the function when the screen is clicked
+
 screen.mainloop()
+window.mainloop()
