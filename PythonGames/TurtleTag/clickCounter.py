@@ -30,7 +30,6 @@ def chase_move(x_cor, y_cor):  # _cor is where the mouse wants to go
     if turtle.distance(user_arrow) <= 65:  # This checks if the arrow hits the turtle
         user_arrow.color("red")
         turtle.color("red")
-        global tk
         messagebox.showinfo(
             "Turtle Tag!",
             "You caught the Turtle in {0} clicks!\nYou Win!".format(click_counter),
